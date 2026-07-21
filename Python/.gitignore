@@ -1,0 +1,40 @@
+# ==============================
+# Entornos Virtuales y Python
+# ==============================
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# ==============================
+# PyTorch y Machine Learning (¡Crítico!)
+# ==============================
+# No subas los modelos pesados
+*.pth
+*.pt
+*.ckpt
+
+# No subas datos de entrenamiento (imágenes, CSV, etc.)
+/data/
+/dataset/
+*.csv
+
+# Ignora los registros de entrenamiento (TensorBoard, etc.)
+runs/
+lightning_logs/
+
+# ==============================
+# Editores y Entorno Operativo
+# ==============================
+# Configuración local de VS Code
+.vscode/
+
+# Archivos ocultos de Linux/Mac
+.DS_Store
+
+# ==============================
+# Variables de entorno y secretos
+# ==============================
+# NUNCA subas archivos con contraseñas o tokens de APIs
+.env
